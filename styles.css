@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     color: #fff;
 }
 
-/* Navigation */
 nav {
     background-color: rgba(30, 41, 59, 0.5);
     padding: 1rem;
@@ -71,7 +70,6 @@ nav {
     cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
     max-width: 1200px;
     margin: 4rem auto;
@@ -124,8 +122,8 @@ nav {
 }
 
 .profile-image {
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     margin: 0 auto;
     background: linear-gradient(to right, #2dd4bf, #3b82f6);
     border-radius: 50%;
@@ -134,7 +132,6 @@ nav {
     justify-content: center;
 }
 
-/* Skills Section */
 .skills {
     background-color: rgba(30, 41, 59, 0.3);
     padding: 4rem 1rem;
@@ -169,7 +166,6 @@ nav {
     transform: translateY(-5px);
 }
 
-/* Services Section */
 .services {
     max-width: 1200px;
     margin: 4rem auto;
@@ -211,7 +207,6 @@ nav {
     color: #94a3b8;
 }
 
-/* Footer */
 footer {
     background-color: rgba(30, 41, 59, 0.5);
     padding: 2rem 1rem;
@@ -240,7 +235,6 @@ footer {
     color: #2dd4bf;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
