@@ -122,14 +122,17 @@ nav {
 }
 
 .profile-image {
-    width: 200px;
+    width: 50%;
     height: 100px;
-    margin: 0 auto;
     background: linear-gradient(to right, #2dd4bf, #3b82f6);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 0;
 }
 
 .skills {
