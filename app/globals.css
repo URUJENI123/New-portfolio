@@ -7,50 +7,50 @@
 }
 
 :root {
-  /* Light mode colors */
-  --color-background: 0 0% 100%;
-  --color-foreground: 0 0% 3.6%;
-  --color-primary: 220 90% 56%;
+  /* Light mode - Awesomity-inspired bright theme */
+  --color-background: 0 0% 98%;
+  --color-foreground: 224 71% 20%;
+  --color-primary: 224 71% 20%;
   --color-primary-foreground: 0 0% 100%;
-  --color-secondary: 220 14% 96%;
-  --color-secondary-foreground: 0 0% 3.6%;
-  --color-accent: 220 90% 56%;
-  --color-accent-foreground: 0 0% 100%;
-  --color-muted: 220 14% 96%;
-  --color-muted-foreground: 220 8.9% 46.1%;
-  --color-border: 220 13% 91%;
+  --color-secondary: 60 100% 50%;
+  --color-secondary-foreground: 224 71% 20%;
+  --color-accent: 60 100% 50%;
+  --color-accent-foreground: 224 71% 20%;
+  --color-muted: 220 13% 85%;
+  --color-muted-foreground: 220 8.9% 40%;
+  --color-border: 220 13% 90%;
   --radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Dark mode colors */
-    --color-background: 220 13% 13%;
-    --color-foreground: 0 0% 98%;
-    --color-primary: 220 90% 56%;
-    --color-primary-foreground: 220 13% 13%;
-    --color-secondary: 220 13% 23%;
-    --color-secondary-foreground: 0 0% 98%;
-    --color-accent: 220 90% 56%;
-    --color-accent-foreground: 220 13% 13%;
-    --color-muted: 220 14% 30%;
-    --color-muted-foreground: 220 8.9% 70%;
-    --color-border: 220 13% 25%;
+    /* Dark mode - Awesomity dark navy with yellow accents */
+    --color-background: 224 35% 12%;
+    --color-foreground: 0 0% 100%;
+    --color-primary: 224 35% 12%;
+    --color-primary-foreground: 0 0% 100%;
+    --color-secondary: 60 100% 50%;
+    --color-secondary-foreground: 224 35% 12%;
+    --color-accent: 60 100% 45%;
+    --color-accent-foreground: 224 35% 12%;
+    --color-muted: 224 25% 25%;
+    --color-muted-foreground: 0 0% 70%;
+    --color-border: 224 25% 20%;
   }
 }
 
 .dark {
-  --color-background: 220 13% 13%;
-  --color-foreground: 0 0% 98%;
-  --color-primary: 220 90% 56%;
-  --color-primary-foreground: 220 13% 13%;
-  --color-secondary: 220 13% 23%;
-  --color-secondary-foreground: 0 0% 98%;
-  --color-accent: 220 90% 56%;
-  --color-accent-foreground: 220 13% 13%;
-  --color-muted: 220 14% 30%;
-  --color-muted-foreground: 220 8.9% 70%;
-  --color-border: 220 13% 25%;
+  --color-background: 224 35% 12%;
+  --color-foreground: 0 0% 100%;
+  --color-primary: 224 35% 12%;
+  --color-primary-foreground: 0 0% 100%;
+  --color-secondary: 60 100% 50%;
+  --color-secondary-foreground: 224 35% 12%;
+  --color-accent: 60 100% 45%;
+  --color-accent-foreground: 224 35% 12%;
+  --color-muted: 224 25% 25%;
+  --color-muted-foreground: 0 0% 70%;
+  --color-border: 224 25% 20%;
 }
 
 body {

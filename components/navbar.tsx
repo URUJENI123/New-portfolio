@@ -15,12 +15,15 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 bg-background border-b border-border">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="sticky top-0 z-50 bg-primary dark:bg-primary border-b border-primary dark:border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="font-bold text-2xl text-primary">
-            Portfolio
+          <Link href="/" className="font-bold text-2xl text-white dark:text-accent flex items-center gap-2">
+            <div className="w-8 h-8 rounded-md border-2 border-accent flex items-center justify-center">
+              <span className="text-sm font-black">/</span>
+            </div>
+            <span className="hidden sm:inline">Studio</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -29,28 +32,28 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className="text-white dark:text-gray-300 hover:text-accent dark:hover:text-accent transition-colors font-medium text-sm uppercase tracking-wide"
               >
                 {item.label}
               </Link>
             ))}
-            <ThemeToggle />
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center gap-4">
+          {/* Right side - Theme toggle and menu */}
+          <div className="flex items-center gap-4">
             <ThemeToggle />
+            {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg bg-secondary hover:bg-muted"
+              className="md:hidden p-2 rounded-md bg-white bg-opacity-10 hover:bg-opacity-20 transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -66,7 +69,7 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-2 rounded-lg hover:bg-secondary transition-colors font-medium"
+                className="block px-4 py-2 rounded-md hover:bg-white hover:bg-opacity-10 transition-colors font-medium text-white text-sm uppercase"
               >
                 {item.label}
               </Link>
